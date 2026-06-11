@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>影视搜索 - 高品质影视</title>
+  <meta name="description" content="高品质影视搜索频道，可按影片名称、地区、年份、类型和题材快速检索高清影视内容。">
+  <meta name="keywords" content="免费国产电影在线看 - 高清影视资源平台-高品质影视,国产,视频,免费,在线观看,高清,影视大全,影视搜索,电影搜索,剧集搜索">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="brand" href="./index.html" aria-label="高品质影视">
+      <span class="brand-icon">▶</span>
+      <span>高品质影视</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link" href="./categories.html">分类</a>
+      <a class="nav-link" href="./ranking.html">热播榜</a>
+      <a class="nav-link active" href="./search.html">搜索</a>
+      <a class="nav-link" href="./category-domestic.html">国产专区</a>
+      <a class="nav-link" href="./category-drama.html">剧情口碑</a>
+      <a class="nav-link" href="./category-suspense.html">悬疑犯罪</a>
+      <a class="nav-link" href="./category-action.html">动作冒险</a>
+      <a class="nav-link" href="./category-romance.html">爱情喜剧</a>
+      <a class="nav-link" href="./category-fantasy.html">科幻奇幻</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="打开菜单" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" aria-label="移动端导航" data-mobile-nav>
+    <a class="mobile-link" href="./index.html">首页</a>
+    <a class="mobile-link" href="./categories.html">分类</a>
+    <a class="mobile-link" href="./ranking.html">热播榜</a>
+    <a class="mobile-link active" href="./search.html">搜索</a>
+    
+    <a class="mobile-link" href="./category-domestic.html">国产专区</a>
+    <a class="mobile-link" href="./category-drama.html">剧情口碑</a>
+    <a class="mobile-link" href="./category-suspense.html">悬疑犯罪</a>
+    <a class="mobile-link" href="./category-action.html">动作冒险</a>
+    <a class="mobile-link" href="./category-romance.html">爱情喜剧</a>
+    <a class="mobile-link" href="./category-fantasy.html">科幻奇幻</a>
+    <a class="mobile-link" href="./category-thriller.html">恐怖惊悚</a>
+    <a class="mobile-link" href="./category-history.html">历史战争</a>
+    <a class="mobile-link" href="./category-anime-variety.html">动漫综艺</a>
+    <a class="mobile-link" href="./category-global.html">海外精选</a>
+  </nav>
+</header>
+<main>
+  <section class="page-hero search-hero">
+    <div class="container">
+      <span>Search</span>
+      <h1>影视搜索</h1>
+      <p>输入影片名称、地区、年份、类型或题材关键词，快速查找对应详情页。</p>
+      <form class="search-panel" id="searchForm">
+        <input type="search" id="searchInput" name="q" placeholder="输入关键词搜索">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="container section-block">
+    <div class="movie-grid" id="searchResults"></div>
+    <p class="empty-state" id="searchEmpty" hidden>暂无匹配影片</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand footer-logo" href="./index.html">
+        <span class="brand-icon">▶</span>
+        <span>高品质影视</span>
+      </a>
+      <p>免费国产电影在线观看平台，拥有海量高清影视资源，分类明确搜索便捷，致力于提供优质的在线观影解决方案。</p>
+    </div>
+    <div>
+      <h2>快速导航</h2>
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./categories.html">分类</a></li>
+        <li><a href="./ranking.html">热播榜</a></li>
+        <li><a href="./search.html">搜索</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>影视分类</h2>
+      <ul>
+          <li><a href="./category-domestic.html">国产专区</a></li>
+          <li><a href="./category-drama.html">剧情口碑</a></li>
+          <li><a href="./category-suspense.html">悬疑犯罪</a></li>
+          <li><a href="./category-action.html">动作冒险</a></li>
+          <li><a href="./category-romance.html">爱情喜剧</a></li>
+          <li><a href="./category-fantasy.html">科幻奇幻</a></li>
+          <li><a href="./category-thriller.html">恐怖惊悚</a></li>
+          <li><a href="./category-history.html">历史战争</a></li>
+          <li><a href="./category-anime-variety.html">动漫综艺</a></li>
+          <li><a href="./category-global.html">海外精选</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 高品质影视. 保留所有权利。</div>
+</footer>
+<script src="./assets/search-data.js"></script>
+<script src="./assets/app.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
